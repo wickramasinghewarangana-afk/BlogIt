@@ -1,0 +1,135 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+nav a {
+  color: #6c63ff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #4338ca;
+  text-decoration: underline;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Buttons ===== */
+button,
+a.button {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+a.button:hover {
+  background-color: #4338ca;
+}
+
+/* ===== Blog Cards ===== */
+.blog-box {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.blog-box:hover {
+  background-color: #f0f0ff;
+  transform: translateY(-3px);
+}
+
+.blog-box h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.blog-box h3 a:hover {
+  color: #6c63ff;
+}
+
+/* ===== Messages ===== */
+.success-box {
+  background-color: #e6ffe6;
+  border: 1px solid #22c55e;
+  color: #166534;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.error-box {
+  background-color: #ffe6e6;
+  border: 1px solid #dc2626;
+  color: #991b1b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  color: #777;
+  border-top: 1px solid #ddd;
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
+.success-box,
+.error-box {
+  animation: fadeOut 5s forwards;
+}
